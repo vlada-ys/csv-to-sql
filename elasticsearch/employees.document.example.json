@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "name": "Alice Smith",
+    "age": 29,
+    "grade": "L3",
+    "salary": 55000.5,
+    "source_table": "employees",
+    "updated_at": "2026-05-23T10:30:00+00:00"
+}

@@ -1,0 +1,42 @@
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "match": {
+                        "name": {
+                            "query": "Alic Smith",
+                            "fuzziness": "AUTO"
+                        }
+                    }
+                }
+            ],
+            "filter": [
+                {
+                    "term": {
+                        "grade": "L3"
+                    }
+                },
+                {
+                    "range": {
+                        "salary": {
+                            "gte": 50000
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "sort": [
+        {
+            "salary": {
+                "order": "desc"
+            }
+        },
+        {
+            "name.keyword": {
+                "order": "asc"
+            }
+        }
+    ]
+}
