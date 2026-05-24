@@ -175,7 +175,7 @@ The application currently infers the following SQL types:
 
 Empty values make the generated column nullable.
 
-## Elasticsearch extra credit
+## Elasticsearch
 
 The `elasticsearch/` directory contains example files showing how employee data could be indexed into Elasticsearch or another open search engine.
 
@@ -272,7 +272,6 @@ In production, I would keep the SQL database as the source of truth and update E
 Possible future improvements:
 
 - support different SQL dialects, such as MySQL or SQLite
-- allow choosing whether to generate an `id` column
 - support custom type inference rules
 - support streaming type inference for very large CSV files
 - generate Elasticsearch mappings dynamically from inferred SQL column types
